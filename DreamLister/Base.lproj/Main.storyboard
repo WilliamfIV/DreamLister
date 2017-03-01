@@ -34,16 +34,53 @@
                                 </segments>
                                 <color key="tintColor" red="0.40207509082611731" green="0.41011659264263967" blue="0.41011659264263967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Euf-7K-yVH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Euf-7K-yVH">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vvS-Mp-FjR">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="vvS-Mp-FjR">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vvS-Mp-FjR" id="WnD-tL-MCm">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-AC-Vk4">
+                                                    <rect key="frame" x="8" y="8" width="327" height="133.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-vw-gKS">
+                                                            <rect key="frame" x="16" y="15" width="102" height="102"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tesla Model S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbR-8G-OWn">
+                                                            <rect key="frame" x="126" y="8" width="193" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="17"/>
+                                                            <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$80,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baO-5b-yEQ">
+                                                            <rect key="frame" x="126" y="37" width="193" height="21"/>
+                                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="17"/>
+                                                            <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="This car is awesome, one day I will buy it!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-TL-Ss8">
+                                                            <rect key="frame" x="126" y="66" width="193" height="60"/>
+                                                            <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
+                                                            <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="SIc-TL-Ss8" secondAttribute="bottom" constant="7.5" id="PWO-fm-mYv"/>
+                                                        <constraint firstItem="SIc-TL-Ss8" firstAttribute="leading" secondItem="NvF-vw-gKS" secondAttribute="trailing" constant="8" id="aLR-fe-FFV"/>
+                                                        <constraint firstItem="SIc-TL-Ss8" firstAttribute="trailing" secondItem="1Sp-AC-Vk4" secondAttribute="trailingMargin" constant="8" id="aS5-kt-gIi"/>
+                                                        <constraint firstItem="SIc-TL-Ss8" firstAttribute="top" secondItem="baO-5b-yEQ" secondAttribute="bottom" constant="8" id="ktb-73-QFF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -75,7 +112,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d2q-QN-Lg3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mLk-Gt-MXt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mLk-Gt-MXt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.98640666210000005" green="0.9961730647" blue="0.9961730647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,5 +127,8 @@
             <point key="canvasLocation" x="-4" y="-653"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown" width="329" height="153"/>
+    </resources>
     <color key="tintColor" red="0.77246589467005078" green="0.77246589467005078" blue="0.77246589467005078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
