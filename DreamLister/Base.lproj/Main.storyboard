@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vvS-Mp-FjR" id="WnD-tL-MCm">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-AC-Vk4">
@@ -78,6 +78,9 @@
                                                         <constraint firstItem="SIc-TL-Ss8" firstAttribute="trailing" secondItem="1Sp-AC-Vk4" secondAttribute="trailingMargin" constant="8" id="aS5-kt-gIi"/>
                                                         <constraint firstItem="SIc-TL-Ss8" firstAttribute="top" secondItem="baO-5b-yEQ" secondAttribute="bottom" constant="8" id="ktb-73-QFF"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
