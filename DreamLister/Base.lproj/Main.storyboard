@@ -45,27 +45,33 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-AC-Vk4">
-                                                    <rect key="frame" x="8" y="8" width="327" height="133.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-AC-Vk4">
+                                                    <rect key="frame" x="8" y="8" width="327" height="134"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-vw-gKS">
-                                                            <rect key="frame" x="16" y="15" width="102" height="102"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-vw-gKS">
+                                                            <rect key="frame" x="16" y="15" width="110" height="102"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tesla Model S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbR-8G-OWn">
-                                                            <rect key="frame" x="126" y="8" width="193" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbR-8G-OWn">
+                                                            <rect key="frame" x="134" y="-4" width="193" height="25.5"/>
                                                             <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="17"/>
                                                             <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$80,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baO-5b-yEQ">
-                                                            <rect key="frame" x="126" y="37" width="193" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baO-5b-yEQ">
+                                                            <rect key="frame" x="134" y="29.5" width="193" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="193" id="9x9-8h-PPX"/>
+                                                                <constraint firstAttribute="height" constant="21" id="X97-JL-Nan"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="17"/>
                                                             <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="This car is awesome, one day I will buy it!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-TL-Ss8">
-                                                            <rect key="frame" x="126" y="66" width="193" height="60"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This car is awesome, one day I will buy it!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIc-TL-Ss8">
+                                                            <rect key="frame" x="134" y="58.5" width="193" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="60" id="hv2-jl-rqX"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="15"/>
                                                             <color key="textColor" red="0.32539894530000002" green="0.32862071700000001" blue="0.32862071700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -73,10 +79,18 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="NvF-vw-gKS" firstAttribute="top" secondItem="1Sp-AC-Vk4" secondAttribute="top" constant="15" id="3Ku-zE-9yO"/>
+                                                        <constraint firstItem="NvF-vw-gKS" firstAttribute="leading" secondItem="1Sp-AC-Vk4" secondAttribute="leading" constant="16" id="5Z2-8R-0U5"/>
+                                                        <constraint firstItem="baO-5b-yEQ" firstAttribute="trailing" secondItem="QbR-8G-OWn" secondAttribute="trailing" id="6xD-Rp-qci"/>
+                                                        <constraint firstItem="baO-5b-yEQ" firstAttribute="trailing" secondItem="SIc-TL-Ss8" secondAttribute="trailing" id="EAG-GZ-MlU"/>
+                                                        <constraint firstItem="baO-5b-yEQ" firstAttribute="leading" secondItem="SIc-TL-Ss8" secondAttribute="leading" id="Jb6-8U-YvR"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="SIc-TL-Ss8" secondAttribute="bottom" constant="7.5" id="PWO-fm-mYv"/>
+                                                        <constraint firstItem="baO-5b-yEQ" firstAttribute="top" secondItem="QbR-8G-OWn" secondAttribute="bottom" constant="8" symbolic="YES" id="YWh-kH-9L8"/>
                                                         <constraint firstItem="SIc-TL-Ss8" firstAttribute="leading" secondItem="NvF-vw-gKS" secondAttribute="trailing" constant="8" id="aLR-fe-FFV"/>
                                                         <constraint firstItem="SIc-TL-Ss8" firstAttribute="trailing" secondItem="1Sp-AC-Vk4" secondAttribute="trailingMargin" constant="8" id="aS5-kt-gIi"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NvF-vw-gKS" secondAttribute="bottom" constant="17" id="cyy-Gc-Z6y"/>
                                                         <constraint firstItem="SIc-TL-Ss8" firstAttribute="top" secondItem="baO-5b-yEQ" secondAttribute="bottom" constant="8" id="ktb-73-QFF"/>
+                                                        <constraint firstItem="baO-5b-yEQ" firstAttribute="leading" secondItem="QbR-8G-OWn" secondAttribute="leading" id="xT5-ao-jnk"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
@@ -84,6 +98,12 @@
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="1Sp-AC-Vk4" firstAttribute="trailing" secondItem="WnD-tL-MCm" secondAttribute="trailingMargin" id="0SX-mU-rYW"/>
+                                                <constraint firstItem="1Sp-AC-Vk4" firstAttribute="top" secondItem="WnD-tL-MCm" secondAttribute="topMargin" id="ILj-8J-yPz"/>
+                                                <constraint firstItem="1Sp-AC-Vk4" firstAttribute="centerY" secondItem="WnD-tL-MCm" secondAttribute="centerY" id="Qbv-Ex-PCo"/>
+                                                <constraint firstItem="1Sp-AC-Vk4" firstAttribute="leading" secondItem="WnD-tL-MCm" secondAttribute="leadingMargin" id="s0h-fb-pQv"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="details" destination="SIc-TL-Ss8" id="akZ-5W-TI5"/>
